@@ -1,14 +1,10 @@
 # sec-lint
 
-Files in python2 is used for python version 2.x
+Please copy the custom_hooks folder to the gitlab's [Gitaly relative path](https://docs.gitlab.com/ee/administration/server_hooks.html). 
 
-Files in python3 is used for python version 3.x
+Make the pre-receive file and the linter.py file executable and ensure that the custom_hooks and it's files are owned by the Git user and in the Git group.
 
-pre-recevie hook is in the pre-receive.py
-
-lint code is in the linter.py
-
-Please run the testCase:
+testCase:
 ```bash
 python testCase.py
 ```
