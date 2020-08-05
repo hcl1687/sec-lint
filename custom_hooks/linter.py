@@ -56,7 +56,7 @@ def isTarget(fileName):
     ruleObjList = RULE_OBJ_LIST
 
     # filter rules based on fileName
-    ruleObjList = list(filter(lambda ruleObj: ruleObj['regex'].match(fileName), ruleObjList))
+    ruleObjList = list(filter(lambda ruleObj: ruleObj['regex'].search(fileName), ruleObjList))
     return len(ruleObjList) != 0
 
 def lint(fileData, fileName):
@@ -67,7 +67,7 @@ def lint(fileData, fileName):
         return res
 
     # filter rules based on fileName
-    ruleObjList = list(filter(lambda ruleObj: ruleObj['regex'].match(fileName), ruleObjList))
+    ruleObjList = list(filter(lambda ruleObj: ruleObj['regex'].search(fileName), ruleObjList))
     if len(ruleObjList) == 0:
         return res
 
@@ -95,7 +95,8 @@ def lintLine(lineData, ruleObjList, lineNo, fileName):
             if search == None:
                 continue
 
+            (start, end) = search.span()
             message = regexObj['message']
-            res.append(message + ' in ' + fileName + '(line:' + str(lineNo) + ')')
+            res.append(message + ' in ' + fileName + '(' + str(lineNo) + ', ' + str(start) + ')')
 
     return res

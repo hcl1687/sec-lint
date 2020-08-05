@@ -1,19 +1,22 @@
 {
-    "target": ".+\\.rb$",
+    "target": "\\.rb$",
     "rules": [{
-        "rule": "params.permit!",
-        "message": "params.permit is dangerous"
+        "rule": "system\\(",
+        "message": "system is dangerous."
     }, {
-        "rule": "map.connect \":controller/:action/:id\"",
-        "message": "map.connect is dangerous"
+        "rule": "exec\\(",
+        "message": "exec is dangerous."
     }, {
-        "rule": "match \":controller(/:action(/:id(.:format)))\"",
-        "message": "match is dangerous"
+        "rule": "syscall\\(",
+        "message": "syscall is dangerous."
     }, {
-        "rule": "map.connect",
-        "message": "map.connect is dangerous"
+        "rule": "constantize\\(",
+        "message": "constantize is dangerous."
     }, {
-        "rule": "match \":",
-        "message": "match is dangerous"
+        "rule": "eval\\(",
+        "message": "eval is dangerous."
+    }, {
+        "rule": "\\.html_safe",
+        "message": "html_safe is dangerous."
     }]
 }

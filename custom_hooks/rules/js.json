@@ -1,0 +1,13 @@
+{
+    "target": "\\.js$",
+    "rules": [{
+        "rule": "dangerouslySetInnerHTML=",
+        "message": "dangerouslySetInnerHTML is dangerous."
+    }, {
+        "rule": "{{{[^{}]+}}}",
+        "message": "{{{}}} is dangerous."
+    }, {
+        "rule": "eval\\(",
+        "message": "eval is dangerous."
+    }]
+}
