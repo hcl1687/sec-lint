@@ -8,3 +8,6 @@ testCase:
 ```bash
 python testCase.py
 ```
+
+# Lincense
+MIT
