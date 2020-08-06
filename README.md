@@ -9,5 +9,5 @@ testCase:
 python testCase.py
 ```
 
-# Lincense
+# License
 MIT
