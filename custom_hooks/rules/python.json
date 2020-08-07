@@ -1,0 +1,70 @@
+{
+    "target": "\\.py$",
+    "rules": [{
+        "rule": "subprocess\\.*",
+        "message": "subprocess is dangerous."
+    }, {
+        "rule": "os\\.system",
+        "message": "os.system is dangerous."
+    }, {
+        "rule": "os\\.spawn",
+        "message": "os.spawn is dangerous."
+    }, {
+        "rule": "os\\.popen",
+        "message": "os.popen is dangerous."
+    }, {
+        "rule": "exec\\(",
+        "message": "exec is dangerous."
+    }, {
+        "rule": "ast\\.literal_eval\\(",
+        "message": "ast.literal_eval is dangerous."
+    }, {
+        "rule": "cursor\\.execute\\(",
+        "message": "cursor.execute is dangerous."
+    }, {
+        "rule": "Crypto\\.Cipher",
+        "message": "Crypto.Cipher is dangerous."
+    }, {
+        "rule": "Crypto\\.Hash",
+        "message": "Crypto.Hash is dangerous."
+    }, {
+        "rule": "Crypto\\.IO",
+        "message": "Crypto.IO is dangerous."
+    }, {
+        "rule": "Crypto\\.Hash",
+        "message": "Crypto.Hash is dangerous."
+    }, {
+        "rule": "Crypto\\.Protocol",
+        "message": "Crypto.Protocol is dangerous."
+    }, {
+        "rule": "Crypto\\.PublicKey",
+        "message": "Crypto.PublicKey is dangerous."
+    }, {
+        "rule": "Crypto\\.Random",
+        "message": "Crypto.Random is dangerous."
+    }, {
+        "rule": "Crypto\\.Signature",
+        "message": "Crypto.Signature is dangerous."
+    }, {
+        "rule": "Crypto\\.Utilrsa\\.GenerateKey",
+        "message": "Crypto.Utilrsa.GenerateKey is dangerous."
+    }, {
+        "rule": "Urllib_urlopen\\(",
+        "message": "Urllib_urlopen is dangerous."
+    }, {
+        "rule": "paramiko\\.exec_command\\(",
+        "message": "paramiko.exec_command is dangerous."
+    }, {
+        "rule": "SSHClient\\.invoke_shell\\(",
+        "message": "SSHClient.invoke_shell is dangerous."
+    }, {
+        "rule": "RawSQL\\(",
+        "message": "RawSQL is dangerous."
+    }, {
+        "rule": "QuerySet\\.extra\\(",
+        "message": "QuerySet.extra is dangerous."
+    }, {
+        "rule": "eval\\(",
+        "message": "eval is dangerous."
+    }]
+}

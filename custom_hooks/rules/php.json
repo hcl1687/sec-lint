@@ -1,0 +1,52 @@
+{
+    "target": "\\.php",
+    "rules": [{
+        "rule": "exec\\(",
+        "message": "exec is dangerous."
+    }, {
+        "rule": "shell_exec\\(",
+        "message": "shell_exec is dangerous."
+    }, {
+        "rule": "passthru\\(",
+        "message": "passthru is dangerous."
+    }, {
+        "rule": "popen\\(",
+        "message": "popen is dangerous."
+    }, {
+        "rule": "pcntl_exec\\(",
+        "message": "pcntl_exec is dangerous."
+    }, {
+        "rule": "proc_open\\(",
+        "message": "proc_open is dangerous."
+    }, {
+        "rule": "chroot\\(",
+        "message": "chroot is dangerous."
+    }, {
+        "rule": "scandir\\(",
+        "message": "scandir is dangerous."
+    }, {
+        "rule": "chgrp\\(",
+        "message": "chgrp is dangerous."
+    }, {
+        "rule": "chown\\(",
+        "message": "chown is dangerous."
+    }, {
+        "rule": "dl\\(",
+        "message": "dl is dangerous."
+    }, {
+        "rule": "mysqli_query\\(",
+        "message": "mysqli_query is dangerous."
+    }, {
+        "rule": "curl_exec\\(",
+        "message": "curl_exec is dangerous."
+    }, {
+        "rule": "eval\\(",
+        "message": "eval is dangerous."
+    }, {
+        "rule": "ini_set\\(",
+        "message": "ini_set is dangerous."
+    }, {
+        "rule": "ini_alter\\(",
+        "message": "ini_alter is dangerous."
+    }]
+}

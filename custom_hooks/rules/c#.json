@@ -1,0 +1,19 @@
+{
+    "target": "\\.cs$",
+    "rules": [{
+        "rule": "SqlCommand",
+        "message": "SqlCommand is dangerous."
+    }, {
+        "rule": "Process.Start\\(",
+        "message": "Process.Start is dangerous."
+    }, {
+        "rule": "DirectorySearcher",
+        "message": "DirectorySearcher is dangerous."
+    }, {
+        "rule": "Response.Write",
+        "message": "Response.Write is dangerous."
+    }, {
+        "rule": "Request.QueryString",
+        "message": "Request.QueryString is dangerous."
+    }]
+}

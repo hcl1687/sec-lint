@@ -1,0 +1,64 @@
+{
+    "target": "\\.java$",
+    "rules": [{
+        "rule": "addJavascriptInterface\\(",
+        "message": "addJavascriptInterface is dangerous."
+    }, {
+        "rule": "loadUrl\\(",
+        "message": "loadUrl is dangerous."
+    }, {
+        "rule": "ProcessBuilder\\(",
+        "message": "ProcessBuilder is dangerous."
+    }, {
+        "rule": "SAXReader",
+        "message": "SAXReader is dangerous."
+    }, {
+        "rule": "DocumentBuilder",
+        "message": "DocumentBuilder is dangerous."
+    }, {
+        "rule": "XMLStreamReader",
+        "message": "XMLStreamReader is dangerous."
+    }, {
+        "rule": "SAXBuilder",
+        "message": "SAXBuilder is dangerous."
+    }, {
+        "rule": "SAXParser",
+        "message": "SAXParser is dangerous."
+    }, {
+        "rule": "XMLReader",
+        "message": "XMLReader is dangerous."
+    }, {
+        "rule": "SAXSource",
+        "message": "SAXSource is dangerous."
+    }, {
+        "rule": "TransformerFactory",
+        "message": "TransformerFactory is dangerous."
+    }, {
+        "rule": "SAXTransformerFactory",
+        "message": "SAXTransformerFactory is dangerous."
+    }, {
+        "rule": "SchemaFactory",
+        "message": "SchemaFactory is dangerous."
+    }, {
+        "rule": "Unmarshaller",
+        "message": "Unmarshaller is dangerous."
+    }, {
+        "rule": "XPathExpression",
+        "message": "XPathExpression is dangerous."
+    }, {
+        "rule": "JSON.parseObject\\(",
+        "message": "JSON.parseObject is dangerous."
+    }, {
+        "rule": "SpelExpressionParser",
+        "message": "SpelExpressionParser is dangerous."
+    }, {
+        "rule": "getRuntime.exec\\(",
+        "message": "getRuntime.exec is dangerous."
+    }, {
+        "rule": "ProcessBuilder.start\\(",
+        "message": "ProcessBuilder.start is dangerous."
+    }, {
+        "rule": "GroovyShell.evaluate\\(",
+        "message": "GroovyShell.evaluate is dangerous."
+    }]
+}

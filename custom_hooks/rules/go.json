@@ -1,0 +1,19 @@
+{
+    "target": "\\.go$",
+    "rules": [{
+        "rule": "FilePath.Base\\(",
+        "message": "FilePath.Base is dangerous."
+    }, {
+        "rule": "CipherSuites",
+        "message": "CipherSuites is dangerous."
+    }, {
+        "rule": "exec.Command\\(",
+        "message": "exec.Command is dangerous."
+    }, {
+        "rule": "exec.CommandContext\\(",
+        "message": "exec.CommandContext is dangerous."
+    }, {
+        "rule": "syscall.Exec\\(",
+        "message": "syscall.Exec is dangerous."
+    }]
+}

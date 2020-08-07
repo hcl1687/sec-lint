@@ -1,0 +1,13 @@
+{
+    "target": "\\.m$",
+    "rules": [{
+        "rule": "evaluateJavaScript:",
+        "message": "evaluateJavaScript is dangerous."
+    }, {
+        "rule": "loadHTMLString:",
+        "message": "loadHTMLString is dangerous."
+    }, {
+        "rule": "Pasteboard",
+        "message": "Pasteboard is dangerous."
+    }]
+}
